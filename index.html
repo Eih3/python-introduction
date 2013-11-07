@@ -94,12 +94,128 @@
                     </section>
                     <section>
                         <h3>Sa puissance !</h3>
-
                         <img class="fragment" src="img/google.jpg" alt="Logo Google">
                         <img class="fragment" src="img/nasa.jpg" alt="Logo Nasa">
                         <img class="fragment" src="img/blender.jpg" alt="Logo Blender">
-
                     </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Premières commandes Python</h2>
+                    </section>
+                    <section>
+                        <h3>Python peut réaliser des calculs</h3>
+                        <pre><code data-trim>
+&gt;&gt;&gt; 4 + 5
+9
+&gt;&gt;&gt; 2 * 3
+6
+&gt;&gt;&gt; 4 / 2
+2
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Python peut afficher du texte</h3>
+                        <pre><code data-trim>
+&gt;&gt;&gt; print('Bonjour !')
+Bonjour !
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>On peut stocker des résultats dans une variable</h3>
+                        <pre><code data-trim>
+&gt;&gt;&gt; a = 10
+&gt;&gt;&gt; b = 5
+&gt;&gt;&gt; c = a + b
+&gt;&gt;&gt; print(c)
+15
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Jouer avec le texte</h3>
+                        <pre><code data-trim>
+&gt;&gt;&gt; a = "coucou"
+&gt;&gt;&gt; b = 5 * a
+&gt;&gt;&gt; print(b)
+coucoucoucoucoucoucoucoucoucou
+&gt;&gt;&gt; a = "I love"
+&gt;&gt;&gt; b = "Python"
+&gt;&gt;&gt; print(a + b)
+I lovePython
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Attention au typage !</h3>
+                        <pre><code data-trim>
+&gt;&gt;&gt; a = "5"
+&gt;&gt;&gt; b = 5 * a
+&gt;&gt;&gt; print(b)
+55555
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Un autre type de donnée : les booléens</h3>
+                        <pre><code data-trim>
+&gt;&gt;&gt; 5 &gt; 3
+True
+&gt;&gt;&gt; 6 &lt; 1
+False
+&gt;&gt;&gt; 12 == 12
+True
+&gt;&gt;&gt; 12 != 12
+False
+                        </code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Notre premier script</h2>
+                        <p>
+                            On ouvre son éditeur de texte favorie. Et on enregistre un fichier vierge sous le nom <strong>prog1.py</strong>.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>prog1.py : What's your name ? </h3>
+                        <pre><code data-trim>
+# -*- coding: utf-8 -*-
+
+# ceci est un commentaire il ne sera pas interprété par python
+
+# nous allons récupérer l'entré utilisateur
+nom = raw_input('Quel est votre nom ?')
+# puis l'afficher à l'écran
+print('Bonjour ' + nom)
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Retour dans la console shell</h3>
+                        <pre><code data-trim>
+$ python prog1.py
+Quel est votre nom ? alexis
+Bonjour alexis
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>prog2.py : La tête dans le carré</h3>
+                        <pre><code data-trim>
+# -*- coding: utf-8 -*-
+
+# récupération de l'entré utilisateur
+valeur = raw_input('Saisissez un chiffre :')
+
+# on change le typage de la variable en chiffre entier
+valeur = int(valeur)
+
+# on calcule le carré de la valeur et on le stocke dans une variable
+carre = valeur * valeur
+
+# on affiche le carré de la valeur saisie
+print("Le carré de %s est %s" % (valeur, carre))
+                        </code></pre>
+                    </section>
+
                 </section>
 
                 <section>
